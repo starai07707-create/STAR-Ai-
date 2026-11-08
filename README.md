@@ -1,28 +1,29 @@
 # STAR AI
 
-A responsive, luxury black-and-gold AI assistant workspace for STAR GLOBAL TECH.
+A responsive, premium black-and-gold AI assistant interface for STAR GLOBAL TECH, built with plain HTML, CSS, and JavaScript.
 
-## Run locally
+## Run it
 
-Open `index.html` in a modern browser. No build step or package installation is required.
+Open `index.html` in a modern browser, or publish the repository with GitHub Pages. No build tools or package installation are needed. A network connection is required to load the optional Google Fonts and contact Gemini.
 
-## Connect Gemini
+## Enable Gemini chat
 
 1. Create a Gemini API key in [Google AI Studio](https://aistudio.google.com/app/apikey).
-2. Open **Settings & API key** in STAR AI and save the key.
-3. Choose Gemini 2.5 Flash or Pro and start chatting.
+2. Open **Settings & Gemini API** in STAR AI and paste your key.
+3. Choose a Gemini model and send a message. The model must be enabled and available for your Google account; access and quotas depend on Google.
 
-The key is stored in this browser's local storage and requests are made directly to Google's Gemini API. Do not use a personal API key on a shared or public device. Gemini API access, quotas, model availability, and billing are controlled by Google.
+**Security:** This is a static front-end. The API key is stored in this browser's local storage and sent directly to Google's Gemini API. Do not use a personal key on a shared device or commit it to source control. For a public production app, move Gemini requests behind a secured backend, add authentication, rate limiting, and server-side secret storage.
 
-## Included
+## Included in this starter
 
-- Gemini chat with selectable models and mode-specific prompts for writing, coding, study, and translation
-- Image creation mode (where the configured Gemini image model is available) and image attachments for multimodal prompts
-- Browser speech input and read-aloud controls (browser support and microphone permission required)
-- Local conversation history and optional display name
-- Responsive mobile/Android-friendly layout
+- Responsive Android/mobile and desktop layouts, with STAR's black-and-gold crown-star identity
+- Gemini chat with a model selector and clear API error messages
+- AI writing, coding, and beginner-friendly study modes using task-specific instructions
+- Local chat history, conversation search, new chat, and response copy/share/feedback actions
+- Browser speech input and read-aloud controls where the browser supports them (microphone permission is requested by the browser)
+- Settings for a local display name and Gemini API key
 - Founder profile for Jemi Angelin Selvaraj, Founder & CEO of STAR GLOBAL TECH
 
-## Notes
+## Scope and next production steps
 
-This is a front-end starter and does not include server-side authentication or synced accounts. Display name and conversation history remain in the current browser. For production accounts, shared history, and secure API key management, connect a trusted backend and authentication provider; never put a shared secret in a public static site.
+This is a functional front-end starter, not a complete SaaS backend. Accounts, synchronized history, server-side key management, payments, admin access, image/video generation, and document storage are not implemented. Add those with a trusted backend and explicitly configured providers before advertising them as available. Never expose provider secrets in a public static site.
